@@ -1,0 +1,6 @@
+<!-- acciones/templates/app/edad.html -->
+<h1>Calcular Edad</h1>
+<form method="post">{% csrf_token %}{{ form.as_p }}<button>Calcular</button></form>
+{% if resultado %}
+<p>Edad: {{ resultado }} años</p>
+{% endif %}
